@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+header 
+{
+    min-width: 100vw;
+    padding: 20px 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header li
+{
+    font-family: sans-serif;
+    padding: 0 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left 
+{
+  width: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+header ul 
+{
+  list-style-type: none;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+header ul li 
+{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+header ul li:nth-child(4)
+{
+  border-radius: 2rem;
+  background-color: #081E341F;
+}
+
+.description 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  margin-top: 50px;
+}
+
+.description .left 
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 250px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.left h1 
+{
+  font-size: 3rem;
+}
+
+.images 
+{
+  position: relative;
+  max-width: 50%;
+}
+
+.mainImage 
+{
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.fire
+{
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  right: 20px;
+}
+
+.dollar 
+{
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left button 
+{
+  margin-top: 20px;
+  font-family: sans-serif;
+  width: 120px;
+  padding: 7px 15px;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  background-color: #712FFF;
+}
+
+.howItWorks 
+{
+  border-radius: 2rem;
+  margin-top: 50px;
+  background-color: #E1DEE7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.top 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top h1 
+{
+  font-size: 3rem;
+}
+
+.bottom 
+{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card img 
+{
+  margin-bottom: 30px;
+}
+
+.card h1 
+{
+  margin-bottom: 20px;
+}
+
+.getStarted 
+{
+  background-color: #f1f1f1;
+  padding: 100px 70px;
+}
+
+.getStarted h1 
+{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.getStarted p 
+{
+  margin-bottom: 20px;
+}
+
+.getStarted > form > input 
+{
+  height: 2rem;
+  border: none;
+  width: 400px;
+  border-radius: 1rem;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url('./images/Search.svg') no-repeat scroll 7px 7px white;
+  background-position-y: center;
+}
+
+.getStarted input::placeholder
+{
+  vertical-align:baseline;
+}
+
+.getStarted button
+{
+  margin-left: 20px;
+  font-family: sans-serif;
+  width: 100px;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  background-color: #712FFF;
+}
+
+.uploadCV
+{
+  display: flex;
+  padding: 0 70px;
+  padding-right: 150px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.uploadCV h1 
+{
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.lightning 
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+
+.star 
+{
+  position: absolute;
+  top: 20px;
+  right: 50%;
+}
+
+.button 
+{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #712FFF;
+  width: 100px;
+  color: white;
+  padding: 10px 13px;
+  border-radius: 2rem;
+}
+
+footer
+{
+  margin-top: 170px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+footer ul 
+{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+footer li 
+{
+  font-family: sans-serif;
+}
+
+footer p
+{
+  color: #bbb8c7;
+  font-family: sans-serif;
+}
+
+footer span 
+{
+  border-bottom: 1px solid;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 425px)
+{
+    header 
+    {
+        min-width: 100vw;
+        padding: 0 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header > .left 
+    {
+        width: 40%;
+    }
+    header > .right > ul > li 
+    {
+        display: none;
+    }
+    header > .right > ul > li:nth-child(4)
+    {
+        display: inline-block;
+    }
+    header .left img
+    {
+        width: 27px;
+    }
+    header .left p 
+    {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    header .right 
+    {
+        width: 50%;
+    }
+    header .right ul
+    {
+        display: flex;
+        justify-content: right;
+    }
+    header .right li:nth-child(4)
+    {
+        text-align: center;
+        width: 125px;
+        font-size: 20px;
+    }
+    .description 
+    {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .description h1 
+    {
+      font-size: 1.5rem;
+      padding: 0 15px;
+      margin-bottom: 20px;
+    }
+    .description .images 
+    {
+        max-width: 100%;
+    }
+    .dollar
+    {
+      top: 10px;
+      width: 25%;
+    }
+    .fire 
+    {
+      bottom: 20px;
+      width: 25%;
+    }
+    .description .left
+    {
+      padding: 0;
+      text-align: center;
+      width: 100%;
+      padding-top: 20px;
+      padding-right: 0;
+      align-items: center;
+    }
+    .description .left button 
+    {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 2rem;
+      width: 150px;
+    }
+    .howItWorks 
+    {
+      padding: 40px 20px;
+    }
+    .howItWorks h1 
+    {
+      font-size: 2rem;
+    }
+    .howItWorks .bottom 
+    {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .howItWorks .bottom .card
+    {
+      margin-top: 30px;
+    }
+    .howItWorks .bottom .card h1 
+    {
+      font-size: 1.5rem;
+    }
+    .getStarted 
+    {
+      text-align: center;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .getStarted h1 
+    {
+      font-size: 2rem;
+    }
+    .getStarted form 
+    {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .getStarted form input
+    {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+    .uploadCV
+    {
+      padding: 40px 20px;
+      flex-direction: column;
+    }
+    .uploadCV .images
+    {
+      max-width: 100%;
+    }
+    .uploadCV .right 
+    {
+      margin-top: 100px;
+    }
+    .uploadCV .right h1 
+    {
+      font-size: 2rem;
+    } 
+    footer 
+    {
+      padding: 40px 20px;
+      border-radius: 2rem;
+      flex-direction: column;
+      margin-top: 20px;
+      padding-top: 10px;
+    }
+    footer ul 
+    {
+      width: 100%;
+      flex-direction: column;
+    }
+    footer ul li 
+    {
+      margin-bottom: 20px;
+    }
+    .star 
+    {
+      width: 20%;
+      top: 10px;
+    }
+    .lightning
+    {
+      left: 15px;
+      width: 20%;
+    }
+}
